@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="friendList">
+<head>
+	<title>mini-MyFirstAngular</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body ng-controller="mainCtrl">
+<input placeholder="new friend here..." ng-model="newFriend"><button ng-click="addFriend(newFriend)">Add</button>
+<div ng-repeat="friend in friends">
+<p> {{friend}} </p>
+</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+</body>
+</html>
